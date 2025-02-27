@@ -8,17 +8,17 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 import AboutSection from './components/About'
 
- function App() {
+function App() {
   const [currentPage, setCurrentPage] = useState('home')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const renderContent = () => {
     switch(currentPage) {
-      case '/home': return <Home />
-      case '/projects': return <Projects />
-      case '/skills': return <Skills />
-      case '/about': return <AboutSection/>
-      case '/contact': return <Contact />
+      case 'home': return <Home />
+      case 'projects': return <Projects />
+      case 'skills': return <Skills />
+      case 'about': return <AboutSection/>
+      case 'contact': return <Contact />
       default: return <Home />
     }
   }
